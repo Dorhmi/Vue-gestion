@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar.vue"
     <div>
       <Navbar/>
     </div>
-    <main>
+    <main class="router-view-container">
       <RouterView/>
     </main>
   </div>
@@ -17,6 +17,9 @@ import Navbar from "./components/Navbar.vue"
 <style scoped>
 .body-conatiner {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
+}
+.router-view-container {
+  width: 100%;
 }
 </style>

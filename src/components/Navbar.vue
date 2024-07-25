@@ -7,7 +7,7 @@
 
         <router-link to="user" class="nav-user">
             <font-awesome-icon :icon="['fas', 'user']" />
-            <p>User</p>
+            <p>Users</p>
         </router-link>
     </div>
 </template>
