@@ -1,7 +1,7 @@
 <template>
     <div class="user-view-container">
         <h2>Users</h2>
-        <button @click="addUser">+ Add User</button>
+        <button class="add-btn" @click="addUser">+ Add User</button>
         <div v-for="(item) in user" v-if="show">
             <div class="partner-input-container">
                 <p class="input-title">Nom d'utilisateur :</p>
@@ -86,5 +86,31 @@
         .input-title {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
+    }
+    .submit-btn {
+        background-color: rgb(59, 175, 59);
+        outline: none;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .submit-btn:hover {
+        background-color: rgb(38, 120, 38);
+    }
+    .add-btn {
+        background-color: rgb(59, 175, 59);
+        outline: none;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .add-btn:hover {
+        background-color: rgb(38, 120, 38);
     }
 </style>
